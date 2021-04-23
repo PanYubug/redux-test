@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
-import Count from './containers/Count'
-import store from './redux/store';
+import React, { Component, Fragment } from 'react'
+import Demo from './components/8_ErrorBoundary/Parent'
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        {/* 给容器组件传递store */}
-        <Count store={store}/>
-      </div>
+      <Fragment key={1}>
+        <Demo/>
+      </Fragment>
     )
   }
 }
